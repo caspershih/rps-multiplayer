@@ -10,9 +10,11 @@
 </head>
 <body>
 
-<div>
-
-
+<div class="top-header">
+    <div>
+        <h1>One versus One Rock Paper Scissor Challenge</h1>
+        <h3></h3>
+    </div>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
@@ -33,16 +35,29 @@
 
 // the array for possible outcomes
 
-    var game = ["rock", "paper", "scissor"];
+    var game = ["r", "p", "s"];
 
 // defining varibles
 
     var win = 0;
     var lose = 0;
     var tie = 0;
+    var playerOne;
+    var playerTwo;
 
-// defining the winning and losing situation for players
+// defining the winning losing and tie situations for players
 
+    if (playerOne === playerTwo) {
+        tie ++;
+    }
+
+    if ((playerOne === "r") && (playerTwo === "")) {
+
+    };
+
+// display
+
+    var html 
     
 
 </script>
