@@ -17,20 +17,6 @@
     </div>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAbAl8BzwTFBmiQ4dqfeatt9HT7lFw75sI",
-    authDomain: "rps-multiplayer-1497a.firebaseapp.com",
-    databaseURL: "https://rps-multiplayer-1497a.firebaseio.com",
-    projectId: "rps-multiplayer-1497a",
-    storageBucket: "",
-    messagingSenderId: "196519434373"
-  };
-  firebase.initializeApp(config);
-</script>
-
 <script>
 
 // the array for possible outcomes
@@ -44,6 +30,19 @@
     var tie = 0;
     var playerOne;
     var playerTwo;
+    var gameLocation;
+
+// start the server with 0 player
+
+    playerList.transection(function(playerList){
+        if (playerList === null) {
+            playerList = [];
+        }
+
+    for (var i = 0; i < playerList; i++) {
+        
+    }
+    })
 
 // defining the winning losing and tie situations for players
 
@@ -51,7 +50,27 @@
         tie ++;
     }
 
-    if ((playerOne === "r") && (playerTwo === "")) {
+    if ((playerOne === "r") && (playerTwo === "p")) {
+
+    };
+
+    if ((playerOne === "r") && (playerTwo === "s")) {
+
+    };
+
+    if ((playerOne === "p") && (playerTwo === "r")) {
+
+    };
+
+    if ((playerOne === "p") && (playerTwo === "s")) {
+
+    };
+
+    if ((playerOne === "s") && (playerTwo === "r")) {
+
+    };
+
+    if ((playerOne === "s") && (playerTwo === "p")) {
 
     };
 
@@ -60,6 +79,19 @@
     var html 
     
 
+</script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAbAl8BzwTFBmiQ4dqfeatt9HT7lFw75sI",
+    authDomain: "rps-multiplayer-1497a.firebaseapp.com",
+    databaseURL: "https://rps-multiplayer-1497a.firebaseio.com",
+    projectId: "rps-multiplayer-1497a",
+    storageBucket: "",
+    messagingSenderId: "196519434373"
+  };
+  firebase.initializeApp(config);
 </script>
 </body>
 </html>
